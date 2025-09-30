@@ -6,27 +6,27 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTodosTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('todos', function (Blueprint $table) {
-            $table->id();
-            $table->string('content', 20);
-            $table->timestamps();
-        });
-    }
+  /**
+   * Run the migrations.
+   *
+   * @return void
+   */
+  public function up()
+  {
+    Schema::create('todos', function (Blueprint $table) {
+      $table->id();
+      $table->string('content', 20);
+      $table->timestamps();
+    });
+  }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('todos');
-    }
+  /**
+   * Reverse the migrations.
+   *
+   * @return void
+   */
+  public function down()
+  {
+    Schema::dropIfExists('todos');
+  }
 }
