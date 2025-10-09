@@ -42,11 +42,11 @@
       <button class="create-form__button-submit" type="submit">作成</button>
     </div>
   </form>
-  <div class="section__title">
-   <h2>Todo検索</h2>
- </div>
- <form class="search-form" action="/todos/search" method="get">
-　     @csrf
+　　<div class="section__title">
+  <h2>Todo検索</h2>
+　　</div>
+<form class="search-form" action="/todos/search" method="get">
+     @csrf
    <div class="search-form__item">
    <input class="search-form__item-input" type="text" name="keyword" value="{{ old('keyword') }}">
    <select class="search-form__item-select" name="category_id">
@@ -71,8 +71,8 @@
       <tr class="todo-table__row">
         <td class="todo-table__item">
         <form class="update-form" action="/todos/update" method="POST">
-  　　　　　　　@method('PATCH')
-    　　　　　　@csrf
+@method('PATCH')
+@csrf
             <div class="update-form__item">
             <input class="update-form__item-input" type="text" name="content" value="{{ $todo['content'] }}">
      <input type="hidden" name="id" value="{{ $todo['id'] }}">
