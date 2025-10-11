@@ -26,8 +26,8 @@
     margin: 0 auto;
     width: 70%;  }
 
-        .create-form,
-        .search-form {
+.create-form,
+.search-form {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
